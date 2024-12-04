@@ -9,7 +9,7 @@ let horasExtras = leia.questionFloat('Digite as horas extras: ');
 let descontos = leia.questionFloat('Digite os descontos: ');
 
 console.log(
-  `Salário líquido: ${new Intl.NumberFormat('pr-BR', {
+  `Salário líquido: ${new Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: 'BRL',
   }).format(salarioBruto + adicionalNoturno + horasExtras * 5 - descontos)}`

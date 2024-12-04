@@ -5,7 +5,7 @@ let salario = leia.questionFloat('Digite o salario: ');
 let abono = leia.questionInt('Digite o abono: ');
 
 console.log(
-  `Novo salário: ${new Intl.NumberFormat('pr-BR', {
+  `Novo salário: ${new Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: 'BRL',
   }).format(salario + abono)}`
